@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+services:
+- mongodb
+deploy:
+  provider: heroku
+  edge: true
+  api_key:
+    secure: ghtzCHh0vfmnu1om2avS4Eje4lRms0UCfo6OqS7HKSCaDJJ3si9iWNGkysKIRp2oTNnGHdjv4BmFO1LY8uHatVbEbxOH89UW2g4bDXcxkKxGPIiqOMT6VsYOn8MGobKOhG2+/FZOWCe9t9BcioY+YmMnNduUHCeb0dqlN8aogswNwy649iI4rVPONIxuUhxr4g+N4cXO3/4k4YmaYQmBpM6Z+JrTA1wpIH0rJ/hzejGuOITIqDdPGNgPy3yKPQngwG2MAZL0sAzrts24Tg0WgbDbM0fT8XuUB3Hb0kXEJCHrrVfJHIsOTvrH0FUgLgsR8Sz1Bwm2sF8dD0u1J60tn0jViNsi1j+Fpyr0YBvIlsbRaK2u3xzLyRs/rVrtxYU54kso9gJobeV+YH2/JKoDJnl6/7iiJKhkgGbyiOsuVb3w3Kbcw0Q28y3DQW52d0u3Dm/Vhi8l77ofG19KWw40FCub1wnZp+/5uz1KacDlU2MDicq/VDQLPOh5IutY6UyIT58GvlXvPe8C0s+Wyo/IRtS5SgWrorG07CWMD9DN0Sw8moJdN+IlqHU9wSFMKz/nOQNy/PSG0HRcti6jOSqNopn7qWMHYlv6f225gDZe5WlaFk1L72Bcf7Ie2FasYW1M124gLXK07mud62mHUMbY+ZRaMKdANQODyXmHnN4cydg=
+
+  app: https://protected-atoll-73069.herokuapp.com/
+  on:
+    repo: sburgess287/node-restaurants-app-mongoose
+    branch: feature/with-tests
