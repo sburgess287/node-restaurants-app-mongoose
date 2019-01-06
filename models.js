@@ -42,6 +42,7 @@ restaurantSchema.virtual('grade').get(function() {
 restaurantSchema.methods.serialize = function() {
 
   return {
+    
     id: this._id,
     name: this.name,
     cuisine: this.cuisine,
